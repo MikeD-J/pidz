@@ -1,0 +1,360 @@
+
+body {
+  overflow: hidden;
+  background-color: #f4ede5 !important;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+  margin: 0;
+}
+
+.profile p {
+  margin: 0;
+}
+
+.profile {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 50%;
+  height: 90%;
+  position: absolute;
+  background: #FFFFFF;
+  box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 18px;
+}
+
+.profile .name {
+   margin-top: 20px;
+}
+.filter {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 77, 157, 0.8);
+}
+
+.persona {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  position: relative;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.name {
+  margin-top: 20px;
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+}
+
+.flexbox {
+  display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: space-evenly;
+}
+
+.flexobject {
+  width: 40%;
+}
+.flexobject p:first-child, .profile .uitnodigentitel {
+  margin-top: 20px;
+  color: white;
+  background-color: #004d9d;
+  padding: 5px;
+  box-sizing: border-box;
+}
+.flexobject2 {
+  margin-top: 20px;
+}
+
+.flexobject2 p {
+  display: inline-block;
+}
+
+.fa {
+  color: #004d9d;
+}
+
+.uitnodigen {
+  width: 86.6%;
+    left: 50%;
+    transform: translateX(-50%);
+    position: relative;
+
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  text-align: left;
+  font-size: 16px;
+  margin: 0;
+}
+
+tr td:last-child {
+  text-align: center;
+}
+
+
+.topbar {
+  background: #004d9d;
+  height: 60px;
+}
+
+.topbar .pidzlogo {
+  margin-top: 15px;
+  height: 30px;
+  margin-left: 15px;
+  margin-right: 20px;
+  float: left;
+}
+.topbar .toppersona {
+  float: right;
+  margin-top: 10px;
+  height: 40px;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+.topbar .hbmenu {
+  display: inline-block;
+  background-color: #4a4845;
+      cursor: pointer;
+    font-size: 16px;
+    line-height: 60px;
+    height: 60px;
+    width: 60px;
+    margin-left: 75px;
+    text-align: center;
+}
+
+.topbar .hbmenu i {
+    color: #a4a3a2;
+    font-size: 30px;
+    vertical-align: middle;
+    cursor: pointer;
+}
+.fa-question-circle {
+  font-size: 28px !important;
+    color: white;
+    position: sticky;
+top: 15px;
+    left: 49.5%;
+}
+
+.topbar p {
+      display: inline-block;
+    color: white;
+    float: right;
+    margin-bottom: 0px;
+    margin-top: 20px;
+    font-size: 14px;
+    margin-right: 20px;
+}
+
+.ZoekNBoek {
+  padding: 10px 15px 0;
+  box-sizing: border-box;
+}
+
+.ZoekNBoek h1, .ZoekNBoek .inputs {
+  background-color: white;
+}
+
+.ZoekNBoek h1 {
+  padding: 15px 15px 5px 15px;
+  color: #615e5b;
+  font-size: 24px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  box-sizing: border-box;
+}
+
+.ZoekNBoek .inputs {
+  display: flex;
+  height: 100px;
+  width: 100%;
+  background: #e0dad4;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: space-evenly;
+   margin-bottom: 20px;
+}
+
+.smallinput {
+  padding-right: 15px;
+    padding-left: 15px;
+  width: 16.666%;
+}
+.biginput {
+  padding-right: 15px;
+    padding-left: 15px;
+  width: 33.333%;
+}
+
+.smallinput p, .biginput p{
+  text-transform: uppercase;
+    padding-bottom: 10px;
+    padding-top: 10px;
+        font-weight: 700;
+        font-size: 14px;
+        color:#615e5b;
+        margin-bottom: 0;
+}
+
+.smallinput select, .biginput input {
+      padding: 6px 12px;
+      height: 40px;
+      border-radius: 4px;
+      border: 0px;
+      font-size: 12px;
+      width: 100%;
+}
+
+.smallinput button {
+  display: inline-block;
+    font-size: 14px;
+    height: 40px;
+    padding: 0 20px;
+    background: #004d9d;
+    color: white !important;
+    border: 0;
+    border-radius: 5px;
+    line-height: 38px;
+}
+
+.arrow {
+  margin-left: 4px;
+  display: inline-block;
+    margin-right: 7px;
+    border-top: 5px solid;
+    border-bottom: 0;
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+}
+
+.searchdiv {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.search {
+  display: inline-block;
+    font-size: 14px;
+    height: 50px;
+    font-weight: bold;
+    padding: 0 20px;
+    background: #004d9d;
+    color: white !important;
+    border: 0;
+    border-radius: 5px;
+}
+
+.fa-search {
+  color: white;
+  margin-right: 18px;
+  font-size: 18px !important;
+}
+
+.extrainfo {
+  margin-top: 20px;
+  margin-right: 15px;
+  margin-left: 15px;
+  height: 265px;
+  background: #004d9d;
+}
+
+.bigflex {
+  width: 50%;
+  height:60px;
+  padding: 12px 20px;
+
+}
+
+.bggrey {
+  background-color: #e0dad4;
+  color: #004d9d;
+}
+
+.bggrey p {
+  color: #004d9d !important;
+}
+.bigflex span {
+  border-radius: 0;
+    font-size: 14px;
+    background: #f9574e;
+    font-weight: 700;
+    color: white;
+    padding: 3px 7px;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.bigflex p {
+  display: inline-block;
+      font-size: 26px;
+    color: white;
+    margin-left: 5px;
+}
+
+.wanfor {
+  height: 60px;
+  width: 25%;
+}
+
+.wanforupper {
+  font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+    padding: 10px 15px 0 15px;
+}
+
+.wanforlower {
+      font-size: 12px;
+        color: white;
+      padding: 0px 15px 0px 15px;
+}
+
+.twenfi {
+  width: 25%;
+      padding-right: 15px;
+    padding-left: 15px;
+}
+
+.twenfi p {
+  display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: 700;
+    color: white;
+    font-size: 14px;
+}
+
+.twenfi input, .twenfi select {
+        padding: 6px 12px;
+      height: 40px;
+      border-radius: 4px;
+      border: 0px;
+      font-size: 14px;
+      width: 100%;
+}
+.sisti {
+  width: 16%;
+  padding-left: 15px;
+  padding-right: 
+}
