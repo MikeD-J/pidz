@@ -1,6 +1,6 @@
 
 body {
-  overflow: hidden;
+
   background-color: #f4ede5 !important;
 }
 
@@ -10,8 +10,21 @@ body {
   margin: 0;
 }
 
+td, th {
+  padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid;
+}
+
 .profile p {
   margin: 0;
+}
+
+.uitnodigdiv {
+    padding-top: 10px;
+    padding-bottom: 10px;
+   float: right;
+  margin-top: 5px;
 }
 
 .profile {
@@ -20,12 +33,15 @@ body {
   transform: translate(-50%,-50%);
   width: 50%;
   height: 90%;
-  position: absolute;
+  position: fixed;
   background: #FFFFFF;
   box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.25);
   border-radius: 18px;
 }
 
+.profile .fa {
+    margin-right: 5px;
+}
 .profile .name {
    margin-top: 20px;
 }
@@ -85,6 +101,11 @@ body {
   color: #004d9d;
 }
 
+.tablecont {
+    height: 200px;
+  overflow-y: scroll;
+}
+
 .uitnodigen {
   width: 86.6%;
     left: 50%;
@@ -111,6 +132,8 @@ tr td:last-child {
 
 
 .topbar {
+  position: relative;
+  z-index: 10;
   background: #004d9d;
   height: 60px;
 }
@@ -166,6 +189,8 @@ top: 15px;
 }
 
 .ZoekNBoek {
+  position: relative;
+  z-index: 10;
   padding: 10px 15px 0;
   box-sizing: border-box;
 }
@@ -191,7 +216,6 @@ top: 15px;
    flex-direction: row;
    flex-wrap: wrap;
    justify-content: space-evenly;
-   margin-bottom: 20px;
 }
 
 .smallinput {
@@ -246,11 +270,38 @@ top: 15px;
     border-left: 5px solid transparent;
 }
 
+.ot1 {
+  background-color: white;
+     margin-bottom: 20px;
+width: 100%;
+    padding: 10px 15px;
+}
+
+.ot2 {
+  padding: 8px;
+ 
+}
+
+.ot3 {
+   text-align: center;
+  border: dashed 2px #004d9d;
+  padding: 5px;
+}
+
+.ot3 p {
+  display: inline-block;
+  margin-left: 5px;
+  font-size: 18px;
+  padding: 4px 0px;
+  color: #004d9d;
+}
 .searchdiv {
     padding-top: 10px;
     padding-bottom: 10px;
     text-align: center;
 }
+
+
 
 .search {
   display: inline-block;
@@ -293,7 +344,7 @@ top: 15px;
 .bggrey p {
   color: #004d9d !important;
 }
-.bigflex span {
+.bigflex span, .minur span {
   border-radius: 0;
     font-size: 14px;
     background: #f9574e;
@@ -304,7 +355,7 @@ top: 15px;
     white-space: nowrap;
 }
 
-.bigflex p {
+.bigflex p, .minur p {
   display: inline-block;
       font-size: 26px;
     color: white;
@@ -332,11 +383,11 @@ top: 15px;
 
 .twenfi {
   width: 25%;
-      padding-right: 15px;
-    padding-left: 15px;
+  padding-right: 15px;
+  padding-left: 15px;
 }
 
-.twenfi p {
+.twenfi p, .sisti p {
   display: inline-block;
     max-width: 100%;
     margin-bottom: 5px;
@@ -345,8 +396,8 @@ top: 15px;
     font-size: 14px;
 }
 
-.twenfi input, .twenfi select {
-        padding: 6px 12px;
+.twenfi input, .twenfi select, .sisti .tarif {
+      padding: 6px 12px;
       height: 40px;
       border-radius: 4px;
       border: 0px;
@@ -357,4 +408,183 @@ top: 15px;
   width: 16%;
   padding-left: 15px;
   padding-right: 
+}
+
+.sisti p {
+  width: 100%;
+}
+.sisti .cpb, .sisti label {
+  display: inline-block;
+}
+
+.sisti .cbp {
+  margin-bottom: 30px;
+}
+
+.sisti label {
+  display: inline-block;
+    padding-left: 5px;
+    font-weight: 400;
+    cursor: pointer;
+    font-size: 14px;
+    color: white;
+}
+
+.tarif {
+  margin-bottom: 10px;
+}
+
+.filterbtn {
+  margin-left: 10px;
+  margin-top: 24px;
+  border-radius: 5px;
+  line-height: 38px;
+  color: white;
+      background: transparent;
+    border: 2px solid white;
+    height: 40px;
+    padding: 0 20px;
+}
+
+.personlist {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.vief, .derig, .vieftie, .tiede {
+  padding: 8px;
+  
+      color: #615e5b;
+      font-size: 12px;
+
+}
+
+.vief .cbp, .derig p, .vieftie p, .tiede p{
+ margin-top: 3px;
+}
+
+.vief {
+  width: 5%;
+}
+
+.derig {
+  width: 30%;
+}
+
+.vieftie {
+  width: 15%;
+}
+
+.tiede {
+  width: 10%;
+}
+
+.topflex {
+  height: 38px;
+}
+.topflex .vief, .topflex .derig, .topflex .vieftie, .topflex .tiede {
+   font-weight: 700;
+      text-align: center;
+      background-color: #d3cbc3;
+      text-transform: uppercase;
+      border: 1px solid #ddd;
+
+}
+
+.subflex {
+  height: 60px;
+  text-align: center;
+  vertical-align: middle; 
+}
+
+.subflex:nth-child(even) {
+  background-color: #f6f4f2;
+}
+
+.subflex:nth-child(odd) {
+  background-color: white;
+}
+
+
+.subflex .vief, .subflex .derig, .subflex .vieftie, .subflex .tiede {
+
+  height: 60px;
+  border-bottom: 1px solid #ddd;;
+}
+
+.subflex p, .subflex .fa-times, .subflex span, .subflex .cbp {
+  margin-top: 13px; 
+}
+
+.subflex p {
+  font-weight: 700;
+}
+.fa-times  {
+  color: #615e5b;
+}
+
+.scorebad {
+  background-color: #004d9d;
+    width: 40px;
+    height: 40px;
+    border-radius: 21px;
+    padding: 12px 7px;
+    font-size: 15px;
+        margin: 0 auto;
+
+}
+.invifix {
+  width: 100%;
+}
+
+.subflex .fa-question {
+  color: white;
+}
+.plpersona {
+  height: 100%;
+  float: left;
+   border-radius: 50%;
+}
+
+.subflex .plnaam {
+  float: left;
+    margin-left: 15px;
+    font-weight: 400;
+}
+
+.profile {
+  opacity: 0;
+  z-index: -100;
+}
+
+.bluefilter {
+  opacity: 0;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -200;
+  background: rgba(0, 77, 157);
+}
+
+.profile .fa-times {
+  position: absolute;
+    top: 15px;
+    right: 15px;
+}
+.profile .fa-times:hover {
+  color: red;
+  cursor: pointer;
+}
+
+.extrainfo, .personlist {
+  opacity: 0;
+  position: relative;
+}
+
+.clickblocker {
+  opacity: 0;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 5;
 }

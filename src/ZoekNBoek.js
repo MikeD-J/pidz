@@ -39,10 +39,28 @@ export default function ProfilePopup() {
 
 
 			</div>
+			<div class="ot1">
+				<div class="ot2">
+					<div class="ot3">
+					<i class="fa fa-plus" aria-hidden="true"></i>
+						<p>Opdracht toevoegen</p>
+					</div>
+				</div>
+			</div>
 			<div class="searchdiv">
-				<button class="search"><span class="fa fa-search"></span>Zoek beschikbare ZZP'ers</button>
+				<button onClick={showsearches} class="search"><span class="fa fa-search"></span>Zoek beschikbare ZZP'ers</button>
 			</div>
 
 		</div>
 		</>)
 }
+
+ function showsearches() {
+
+   document.getElementById('personlist').style.opacity = '1';
+   document.getElementById('extrainfo').style.opacity = '1';
+   document.getElementById('clickblocker').style.display = 'none';
+   
+
+
+  }
