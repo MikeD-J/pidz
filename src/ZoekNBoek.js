@@ -34,7 +34,7 @@ export default function ProfilePopup() {
 				</div>
 				<div class="smallinput">
 				<p> &nbsp;</p>
-					<button type="button" onClick="alert('Hello world!')">Details<span class="arrow"></span></button>
+					<button type="button">Details<span class="arrow"></span></button>
 				</div>
 
 
