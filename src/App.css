@@ -512,14 +512,14 @@ width: 100%;
   border-bottom: 1px solid #ddd;;
 }
 
-.subflex p, .subflex .fa-times, .subflex span, .subflex .cbp {
+.subflex p, .subflex .fa-times, .fa-check, .subflex span, .subflex .cbp {
   margin-top: 13px; 
 }
 
 .subflex p {
   font-weight: 700;
 }
-.fa-times  {
+.fa-times, .fa-check  {
   color: #615e5b;
 }
 
@@ -587,4 +587,21 @@ width: 100%;
   width: 100%;
   height: 100%;
   z-index: 5;
+}
+
+#searchalert {
+    display: none;
+    text-align: center;
+    color: red;
+
+}
+
+.taggas {
+  font-size: 0px;
+  opacity: 0;
+}
+
+
+#amigo1, #amigo2, #amigo3, #amigo4, #amigo5, #amigo6 {
+  display: none;
 }

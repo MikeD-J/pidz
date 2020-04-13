@@ -2,6 +2,11 @@ import React from 'react'
 import pidzlogo from './pidz.png';
 import persona from './persona1.jpg';
 import Person from './Person'
+import Person2 from './Person2'
+import Person3 from './Person3'
+import Person4 from './Person4'
+import Person5 from './Person5'
+import Person6 from './Person6'
 
 export default function ProfilePopup() {
 	return(<>
@@ -26,17 +31,22 @@ export default function ProfilePopup() {
 				<p>Organisatie</p>
 			</div>
 			<div class="tiede">
-				<p>Minumum uren</p>
+				<p>Uren</p>
 			</div>
 			<div class="tiede">
 				<p>Score</p>
 			</div>
 		</div>
 		<Person/>
-		<Person/>
-		<Person/>
-		<Person/>
-		<Person/>
+		<Person2/>
+		<Person3/>
+		<Person4/>
+		<Person5/>
+		<Person6/>
+
+		<div class="searchdiv">
+				<button  class="search">ZZP'ers uitnodigen</button>
+			</div>
 	</div>
 		</>)
 }

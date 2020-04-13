@@ -1,19 +1,19 @@
 import React from 'react'
 import pidzlogo from './pidz.png';
-import persona from './persona1.jpg';
-import ProfilePopup from './ProfilePopup'
+import persona from './persona4.jpg';
 
- global.profielpersoon = 0;
 
-export default function Person() {
+
+
+export default function ProfilePopup() {
 	return(<>
-	<div id="pers1" onClick={showprofiel} class="flexbox subflex">
+	<div id="pers4" onClick={showprofiel} class="flexbox subflex">
 			<div class="vief">
 				<input class="cbp" type="checkbox" id="allp" name="vehicle2" value="Bike"/>
 			</div>
 			<div class="derig">
 			<img class="plpersona" src={persona}/>
-				<p class="plnaam">Veronica van Maasen</p><p class="taggas">Afdeling Organisatie</p>
+				<p class="plnaam">Sander van Dongen</p><p class="taggas"></p>
 			</div>
 			<div class="vieftie">
 				<p>Begeleider 1</p>
@@ -22,10 +22,10 @@ export default function Person() {
 				<p>€ 20,00 BTW Vrij</p>
 			</div>
 			<div class="tiede">
-				<i class="fa fa-check" aria-hidden="true"></i>
+				<i class="fa fa-times" aria-hidden="true"></i>
 			</div>
 			<div class="tiede">
-				<i class="fa fa-check" aria-hidden="true"></i>
+				<i class="fa fa-times" aria-hidden="true"></i>
 			</div>
 			<div class="tiede minur">
 			<p class="invifix"></p>
@@ -43,15 +43,14 @@ export default function Person() {
 }
 
  function showprofiel() {
- 	 	document.getElementById('amigo1').style.display = "block";
- 	document.getElementsByTagName("BODY")[0].style.overflow = 'hidden'; 
- 	 document.getElementById('profiel1').style.zIndex = '20';
- 	   document.getElementById('bluefilter').style.zIndex = '15';
-    document.getElementById('profiel1').style.opacity = '1';
-   document.getElementById('bluefilter').style.opacity = '0.8';
+ 	document.getElementById('amigo4').style.display = "block";
 
-   global.profielpersoon = "1";
-  
+ 	document.getElementsByTagName("BODY")[0].style.overflow = 'hidden'; 
+ 	document.getElementById('profiel1').style.zIndex = '20';
+ 	document.getElementById('bluefilter').style.zIndex = '15';
+    document.getElementById('profiel1').style.opacity = '1';
+    document.getElementById('bluefilter').style.opacity = '0.8';
+   
 
 
   }

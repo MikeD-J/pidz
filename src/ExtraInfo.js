@@ -3,6 +3,15 @@ import pidzlogo from './pidz.png';
 import persona from './persona1.jpg';
 import $ from 'jquery'; 
 
+var check1 = false;
+var check2 = false;
+
+ // $("#begeleider1").change(function(){
+
+ 	
+
+ // });
+
 
 export default function ProfilePopup() {
 	return(<>
@@ -20,15 +29,15 @@ export default function ProfilePopup() {
 		<div class="flexbox">
 			<div class="wanfor">
 				<p class="wanforupper">Opdracht</p>
-				<p class="wanforlower">Incidentele opdracht</p>
+				<p id="perioderesult" class="wanforlower">Incidentele opdracht</p>
 			</div>
 			<div class="wanfor">
 				<p class="wanforupper">Afdeling</p>
-				<p class="wanforlower">Department Periodical Shifts 101</p>
+				<p  id="afdelingresult" class="wanforlower">Department Periodical Shifts 101</p>
 			</div>
 			<div class="wanfor">
 				<p class="wanforupper">Periode</p>
-				<p class="wanforlower">08-04-2020 12:00 | 08-04-2020 13:00</p>
+				<p  id="dateresult" class="wanforlower">08-04-2020 12:00 | 08-04-2020 13:00</p>
 			</div>
 			<div class="wanfor">
 			</div>
@@ -40,18 +49,18 @@ export default function ProfilePopup() {
 			</div>
 			<div class="twenfi">
 				<p>Eerder gewerkt bij/op:</p>
-				<select id="afdeling" placeholder="Selecteer een optie">
-				  <option value="volvo">Selecteer een optie</option>
-				  <option value="saab">Afdeling</option>
-				  <option value="saab">Organisatie</option>
+				<select id="afdelingextra" placeholder="Selecteer een optie">
+				  <option value="">Selecteer een optie</option>
+				  <option value="Afdeling">Afdeling</option>
+				  <option value="Organisatie">Organisatie</option>
 				</select>
 			</div>
 			<div class="sisti">
 				<p>Functies</p>
-				<input class="cbp" type="checkbox" id="vehicle1" name="vehicle1" value="Bike"/>
+				<input class="cbp" type="checkbox" id="begeleider1" name="vehicle1" value="Begeleider 1"/>
   				<label for="koek">Begeleider1</label>
   				<br/>
-  				<input class="cbp" type="checkbox" id="vehicle2" name="vehicle2" value="Bike"/>
+  				<input class="cbp" type="checkbox" id="begeleider2" name="vehicle2" value="Begeleider 2"/>
   				<label for="koek">Begeleider2</label>
 			</div>
 			<div class="sisti">
@@ -79,7 +88,7 @@ $(document).ready(function(){
                 $(this).fadeOut();
              
             } else {
-                $(this).show();
+                $(this).fadeIn();
                 count++;
 
             }
@@ -87,4 +96,55 @@ $(document).ready(function(){
         var numberItems = count;
         
     });
+     $("#afdelingextra").change(function(){
+ 
+       
+        var filter2 = $(this).val(), count2 = 0;
+        $(".subflex ").each(function(){
+ 
+            if ($(this).text().search(new RegExp(filter2, "i")) < 0) {
+                $(this).fadeOut();
+             
+            } else {
+                $(this).fadeIn();
+                count2++;
+
+            }
+        });
+        var numberItems2 = count2;
+        
+    });
+    $("#begeleider1").change(function(){
+  		if(this.checked) {
+       		$("#pers1").fadeIn();
+       		$("#pers2").fadeIn();
+       		$("#pers3").fadeIn();
+       		$("#pers4").fadeIn();
+     	}
+       	else {
+     		$("#pers1").fadeOut();
+       		$("#pers2").fadeOut();
+       		$("#pers3").fadeOut();
+       		$("#pers4").fadeOut();
+     	}
+        
+        
+    });
+       $("#begeleider2").change(function(){
+ 		if(this.checked) {
+       		$("#pers5").fadeIn();
+       		$("#pers6").fadeIn();
+     	}
+     	else {
+     		$("#pers5").fadeOut();
+       		$("#pers6").fadeOut();
+     	}
+       
+       
+        
+    });
+
 });
+
+
+   
