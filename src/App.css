@@ -16,6 +16,14 @@ td, th {
     border-bottom: 1px solid;
 }
 
+button  {
+   transition: 0.3s;
+}
+
+button:hover {
+  background: #397aeb !important;
+}
+
 .profile p {
   margin: 0;
 }
@@ -491,7 +499,12 @@ width: 100%;
 
 }
 
+.subflex:hover {
+  background-color: #c8dcff  !important;
+}
+
 .subflex {
+  transition: 0.3s;
   height: 60px;
   text-align: center;
   vertical-align: middle; 
